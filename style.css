@@ -11,32 +11,21 @@ body {
     min-height: 100vh;
     background: whitesmoke;
 }
-
-.wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
 h2 {
-    font-size: 2em;
+    text-align: center;
+    font-size: 3em;
     color: #e94d58;
     margin: 15px 0;
 }
-
-.gif {
-    width: 100%;
-    max-width: 300px;
-}
-
 .btn-group {
-    margin-top: 50px;
-    position: relative;
+    width: 100%;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
-
 button {
+    position: absolute;
     width: 150px;
     height: inherit;
     color: white;
@@ -46,16 +35,14 @@ button {
     cursor: pointer;
     box-shadow: 0 2px 4px gray;
     border: 2px solid #e94d58;
+    font-size: 1.2em;
 }
-
-button.yes-btn {
+button:nth-child(1) {
+    margin-left: -200px;
     background: #e94d58;
 }
-
-button.no-btn {
+button:nth-child(2) {
+    margin-right: -200px;
     background: white;
     color: #e94d58;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
